@@ -17,7 +17,7 @@
         android:contentDescription="@string/selectAnimalSpinner"/>
 
     <TextView
-        android:id="@+id/selectedAnimal"
+        android:id="@+id/selectedAnimal_Test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -28,7 +28,7 @@
     <GridView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/gridView_Stickers"
+        android:id="@+id/gridView_DisplayStickers"
         android:numColumns="auto_fit"
         android:gravity="center"
         android:stretchMode="columnWidth"
