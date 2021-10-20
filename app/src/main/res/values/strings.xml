@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AnimalWhatsappStickers</string>
+    <string name="selectAnimalSpinner">Select your theme of animal stickers:</string>
+    <string-array name="animals_array">
+        <item>Cats 🐱 Vol. 1</item>
+        <item>Dogs 🐶 Vol. 1</item>
+        <item>Spongebob 🧽 Vol. 1</item>
+        <item>Cheems 🐕 Vol. 1</item>
+    </string-array>
+</resources>
