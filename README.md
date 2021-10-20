@@ -2,4 +2,4 @@
 * Just select a sticker pack to add to your whatsapp stickers. 
 * Dogs, cats, cheems, and spongbob.
 
-**NOTE: ** Also just a way for me get into android programming.
+**Note: ** Also my first android project
