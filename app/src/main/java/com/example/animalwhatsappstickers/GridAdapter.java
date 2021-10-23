@@ -37,9 +37,11 @@ public class GridAdapter extends BaseAdapter {
     @Override
     //i is position
     public View getView(int i, View view, ViewGroup viewGroup) {
+        //Create a layout inflator if there isn't one already
         if (layoutInf == null){
             layoutInf = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
+
 
         if(view == null){
             view = layoutInf.inflate(R.layout.grid_item, null);

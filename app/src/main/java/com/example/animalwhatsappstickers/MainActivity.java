@@ -50,12 +50,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Binder
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
-        //setContentView(R.layout.activity_main);
         setContentView(activityMainBinding.getRoot());
 
+        //Create spinner
         animalSpinner = (Spinner) findViewById(R.id.selectAnimalSpinner);
-        //Use arrayadapter to feed XML Array into spinner
         ArrayAdapter<CharSequence> animalAdapter = ArrayAdapter.createFromResource(this,
                 R.array.animals_array, android.R.layout.simple_spinner_item);
         animalAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -77,12 +77,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Gridview stuff
+        //Gridview reference and load w/adapter
         animalGridView = findViewById(R.id.gridView_DisplayStickers);
-        //ListAdapter<> animalSource
-        //RecyclerView.Adapter<>n
         gridAdapter = new GridAdapter(MainActivity.this, animalImages);
         activityMainBinding.gridViewDisplayStickers.setAdapter(gridAdapter);
+        //Gridview listener
         activityMainBinding.gridViewDisplayStickers.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
